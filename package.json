@@ -4,7 +4,7 @@
   "description": "Demo implementation of graphql spec.",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon app.js",
+    "start": "node app.js",
     "test": "test"
   },
   "repository": {
