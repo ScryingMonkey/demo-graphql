@@ -14,7 +14,7 @@ module.exports = buildSchema(`
     quantity: Int!
     imageUrl: String!
     costPrice: String!
-    lastUpdate: String!
+    lastUpdated: String!
     creator: User!
   }
   type AuthData {
