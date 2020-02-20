@@ -15,7 +15,6 @@ module.exports = buildSchema(`
     imageUrl: String!
     costPrice: String!
     lastUpdate: String!
-    createdDate: String!
     creator: User!
   }
   type AuthData {
@@ -43,8 +42,7 @@ module.exports = buildSchema(`
     name: String
     quantity: Int
     imageUrl: String
-    cost: String
-    price: String
+    costPrice: String
   }
 
   type RootQuery {
