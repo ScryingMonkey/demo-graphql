@@ -1,4 +1,4 @@
-const { buildSchema } = require("graphql");
+const { buildSchema } = require('graphql');
 
 module.exports = buildSchema(`
   type User{
@@ -17,11 +17,19 @@ module.exports = buildSchema(`
     lastUpdated: String!
     creator: User!
   }
+  type Project {
+    _id: ID! 
+    name: String! 
+    repoUrl: String!
+    deployedUrl: String! 
+    images: [String!]!
+  }
   type AuthData {
     userId:ID! 
     token: String! 
     tokenExpiration: Int! 
   }
+
   input UserInput {
     email: String!
     password: String!
